@@ -1,0 +1,21 @@
+.container {
+    
+}
+
+.button-toolbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-header-toolbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-header-button {
+    border-radius: '100px';
+}
+
+.student-info {
+    text-align: center;
+}

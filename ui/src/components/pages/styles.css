@@ -1,0 +1,46 @@
+/* General Reset for Full Width */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure Body and HTML occupy full viewport width */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Full Width Section Styling */
+section, footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Hero Section Styling */
+.hero-section {
+  background: url('../assets/bg.png') no-repeat center center;
+  background-size: cover;
+  padding: 90px 0;
+}
+
+.hero-content {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+}

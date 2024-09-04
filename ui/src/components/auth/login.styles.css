@@ -1,0 +1,72 @@
+/* login.styles.css */
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light background color */
+  padding: 0 10px; /* Add padding to avoid touching edges on small screens */
+}
+
+.card {
+  background-color: #fff; /* White background for the card */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Default width for the card (90% of the container) */
+  max-width: 600px; /* Maximum width of the card */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+} 
+
+.form input[type="submit"] {
+  background-color: #0056b3; /* Button background color */
+  color: rgb(35, 35, 35); /* Button text color */
+  border: none; /* Remove default border */
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Button text size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0056b3; /* Same color on hover */
+  color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .form input[type="submit"] {
+    font-size: 14px; /* Smaller button text on small screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    padding: 30px; /* Increase padding for larger screens */
+    width: 80%; /* Increase width for larger screens */
+  }
+}

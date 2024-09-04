@@ -1,0 +1,109 @@
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    margin-left: 10px; /* Adjust space between the logo and text */
+    text-align: center; /* Center text within its container */
+  }
+  
+  h4 {
+    margin: 0; /* Remove default margin */
+  }
+
+/* Sidebar styling */
+.sidebar {
+    height: 100vh; /* Full height sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Fixed width */
+    background-color: #f8f9fa; /* Light background color */
+    border-right: 1px solid #dee2e6; /* Border to distinguish sidebar */
+    overflow-y: auto; /* Scroll if content overflows */
+    padding: 4rem; /* Padding for content */
+    z-index: 1000; /* Ensure sidebar is above other content */
+    /* margin-top: 4rem; */
+}
+
+/* Sidebar links and text styling */
+.sidebar h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    padding-left: 0;
+    list-style-type: none; /* Remove default list styling */
+}
+
+.sidebar li {
+    margin-bottom: 2rem; /* Increased space between items */
+}
+
+.sidebar li:last-child {
+    margin-bottom: 0; /* Remove margin after the last item */
+}
+
+.sidebar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #474747; /* Link color */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center icon and text vertically */
+}
+
+.sidebar a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.sidebar .icon {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+/* Header styling */
+#header {
+    background-color: #ffffff; /* Background color for header */
+    border-bottom: 1px solid #F3FEB8;
+    padding: 1rem;
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    z-index: 999; /* Ensure header is above other content */
+}
+
+.header-with-sidebar {
+    left: 250px; /* Start after the sidebar */
+    width: calc(100% - 250px); /* Full width minus the sidebar width */
+}
+
+.full-width-header {
+    left: 0;
+    width: 100%; /* Full width when logged out */
+}
+
+/* Title styling */
+.title {
+    margin: 0;
+    padding: 0; /* Ensure no extra padding or margin */
+}
+
+/* Ensure content area does not overlap header */
+.content {
+    padding-top: 4rem; /* Adjust based on header height */
+}
+
+/* Class to hide the sidebar */
+.sidebar-hidden {
+    display: none; /* Hide sidebar when logged out */
+}
